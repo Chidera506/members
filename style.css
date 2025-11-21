@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #111827, #020617);
+  color: #e5e7eb;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+/* MAIN WRAPPER */
+.app {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+}
+
+/* HEADER */
+.site-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.site-header h1 {
+  font-size: 1.4rem;
+}
+.site-header p {
+  opacity: 0.8;
+}
+
+/* LOGIN FORM */
+.login-box {
+  background: rgba(15,23,42,0.95);
+  padding: 16px;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.7);
+}
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-box label {
+  font-size: 0.9rem;
+}
+.login-box input {
+  background: #020617;
+  border: 1px solid #4b5563;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+.login-box input:focus {
+  outline: none;
+  border-color: #fbbf24;
+}
+.login-box button {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #fbbf24, #f97316);
+  font-weight: bold;
+  cursor: pointer;
+  color: #111;
+}
+
+/* CARD PAGE */
+.card-section {
+  text-align: center;
+}
+
+.card-wrapper {
+  margin: 15px auto;
+  background: #030712;
+  padding: 10px;
+  border-radius: 16px;
+  max-width: 420px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.7);
+}
+.card-wrapper img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* FADE IN ANIMATION */
+.animated-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s ease;
+}
+.animated-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MEMBERSHIP BADGE */
+.membership-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  border: 1px solid #4b5563;
+}
+.membership-gold {
+  background: rgba(251,191,36,0.2);
+  border-color: #fbbf24;
+  color: #fbbf24;
+}
+.membership-silver {
+  background: rgba(156,163,175,0.2);
+  color: #d1d5db;
+}
+.membership-bronze {
+  background: rgba(248,113,22,0.2);
+  color: #fca5a5;
+}
+
+/* STATUS BOX */
+.status-section {
+  background: rgba(15,23,42,0.95);
+  padding: 16px;
+  border-radius: 16px;
+  margin-top: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  text-align: left;
+}
+.status-title {
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+.status-success { color: #4ade80; }
+.status-warning { color: #fbbf24; }
+
+.status-message {
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+.price-list ul {
+  list-style: none;
+}
+.price-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.price-list li:last-child {
+  border-bottom: none;
+}
+.tier-price {
+  font-weight: bold;
+}
+
+/* LOGOUT */
+.logout-btn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4b5563;
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.logout-btn:hover {
+  background: rgba(30,41,59,0.8);
+}

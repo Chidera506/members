@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your VIP Fan Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <section class="card-section">
+    <p id="welcomeMsg" class="welcome-msg"></p>
+    <h2 id="cardTitle"></h2>
+    <p id="membershipBadge" class="membership-badge"></p>
+
+    <div class="card-wrapper animated-card">
+      <img id="cardImage" src="" alt="">
+    </div>
+
+    <!-- STATUS + PRICES -->
+    <div id="statusSection" class="status-section">
+      <p id="statusTitle" class="status-title"></p>
+      <p id="statusMessage" class="status-message"></p>
+      <div id="priceList" class="price-list"></div>
+    </div>
+
+    <button onclick="goBack()" class="logout-btn">Logout</button>
+  </section>
+
+</div>
+
+<script src="fan-card.js"></script>
+</body>
+</html>
